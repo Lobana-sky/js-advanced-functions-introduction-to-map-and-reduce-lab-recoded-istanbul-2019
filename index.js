@@ -52,7 +52,7 @@ function reduceToAllTrue(sourceArray){
 //     return (e && value);   //&&
 //   })
 
-for(let e of sourceArray)
+for(let e in sourceArray)
 if(e==true)
 return false
 return true
