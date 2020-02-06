@@ -53,7 +53,7 @@ function reduceToAllTrue(sourceArray){
 //   })
 
 for(let e in sourceArray)
-if(e==true)
+if(e==false)
 return false
 return true
 }
