@@ -60,18 +60,22 @@ return true
 
 function reduceToAnyTrue(sourceArray){
   
-  return sourceArray.reduce(function(e,value){
+  // return sourceArray.reduce(function(e,value){
     
-    // if(e===null)return (false && value);
+  //   // if(e===null)return (false && value);
      
-    // else if(e.length!==undefined)
-    //   return false;
-    // else if(e===0)
-    //   return false;
-    // else 
-    //   return true;
-       return (e || value);
-  })
+  //   // else if(e.length!==undefined)
+  //   //   return false;
+  //   // else if(e===0)
+  //   //   return false;
+  //   // else 
+  //   //   return true;
+  //     return (e || value);
+  // })
+  for(let e of sourceArray)
+if(e==true)
+return true
+return false
 }
 
 
