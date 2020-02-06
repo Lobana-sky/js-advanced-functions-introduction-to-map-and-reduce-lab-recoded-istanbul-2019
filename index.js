@@ -38,19 +38,24 @@ function reduceToTotal(sourceArray, startingPoint)
 }
 
 function reduceToAllTrue(sourceArray){
-  return sourceArray.reduce(function(e,value){
-console.log(typeof(e))
-    if(typeof(e)=="string")
-   return (true  && value);
-  //   if(e===null)//null
-  //   return false;
-  //   else if(e.length!==undefined)//string
-  // return total;
-  //   else if(e===0)//0
-  //   return false;
-  //   else return total;//numbers no 0
-    return (e && value);   //&&
-  })
+//   return sourceArray.reduce(function(e,value){
+// console.log(typeof(e))
+//     if(typeof(e)=="string")
+//   return (true  && value);
+//   //   if(e===null)//null
+//   //   return false;
+//   //   else if(e.length!==undefined)//string
+//   // return total;
+//   //   else if(e===0)//0
+//   //   return false;
+//   //   else return total;//numbers no 0
+//     return (e && value);   //&&
+//   })
+
+for(let e of sourceArray)
+if(e==true)
+return false
+return true
 }
 
 function reduceToAnyTrue(sourceArray){
